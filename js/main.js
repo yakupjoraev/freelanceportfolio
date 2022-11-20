@@ -43,3 +43,19 @@ btnDarkMode.onclick = function () {
         localStorage.setItem("darkMode", "light");
     }
 };
+
+//animation to scroll
+function animationScroll() {
+  const sr = ScrollReveal ({
+    distance: '45px',
+    duration: 2700,
+    reset: true
+  })
+  
+  sr.reveal('.header__title',{delay:350, origin:'left'})
+  sr.reveal('.header__content',{delay:350, origin:'right'})
+  
+  sr.reveal('.project',{delay:200, origin:'bottom'})
+}
+
+animationScroll();
